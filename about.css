@@ -139,7 +139,7 @@ ul li a{
 	text-transform: uppercase;
 	letter-spacing: 4px;
 
-	background: url('../img/bgfont.jpeg');
+	background: url('bgfont.jpeg');
 	-webkit-background-clip: text;
 	-webkit-text-fill-color:transparent ;
 
