@@ -140,7 +140,7 @@ ul li a{
 	text-transform: capitalize;
 	letter-spacing: 2px;
 
-	background: url('../img/bgfont.jpeg');
+	background: url('bgfont.jpeg');
 	-webkit-background-clip: text;
 	-webkit-text-fill-color:transparent ;
 
@@ -223,7 +223,7 @@ ul li a{
 	width: 300px;
 	height: 600px;
 	/*border: 2px solid #f3f3f3;*/
-	background: url('../img/home2.png');
+	background: url('home2.png');
 
 	position: absolute;
 	top: 0;
@@ -271,7 +271,7 @@ ul li a{
 	width: 350px;
 	height: 300px;
 
-	background: url('../img/shop2.jpeg');
+	background: url('shop2.jpeg');
 
 	position: absolute;
 	top: 300px;
@@ -281,7 +281,7 @@ ul li a{
 	width: 350px;
 	height: 300px;
 
-	background: url('../img/shop4.jpeg');
+	background: url('shop4.jpeg');
 	position: absolute;
 	top: 300px;
 	left: 700px;
@@ -291,7 +291,7 @@ ul li a{
 	width: 300px;
 	height: 300px;
 
-	background: url('../img/shop3.jpeg');
+	background: url('shop3.jpeg');
 	position: absolute;
 	top: 300px;
 	left: 1000px;	
@@ -525,7 +525,7 @@ ul li a{
 	width: 500px;
 	height: 500px;
 	/*border: 2px solid #f3f3f3;*/
-	background: url('../img/home2.png');
+	background: url('home2.png');
 
 	position: absolute;
 	top: 0;
@@ -569,7 +569,7 @@ ul li a{
 	height: 300px;
 	border-radius: 50%;
 
-	background: url('../img/shop2.jpeg');
+	background: url('shop2.jpeg');
 
 	position: absolute;
 	top: 530px;
@@ -581,7 +581,7 @@ ul li a{
 	border-radius: 50%;
 
 
-	background: url('../img/shop4.jpeg');
+	background: url('shop4.jpeg');
 	position: absolute;
 	top: 900px;
 	left: 50px;
@@ -592,7 +592,7 @@ ul li a{
 	height: 300px;
 	border-radius: 50%;
 
-	background: url('../img/shop3.jpeg');
+	background: url('shop3.jpeg');
 	position: absolute;
 	top: 1300px;
 	left: 50px;	
