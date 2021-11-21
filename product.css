@@ -128,7 +128,7 @@ ul li a{
 	width: 500px;
 	height: 500px;
 	/*border: 2px solid #f3f3f3;*/
-	background: url('../img/shop14.png');
+	background: url('shop14.png');
 
 	position: absolute;
 	top: 10px;
@@ -150,7 +150,7 @@ ul li a{
 	text-transform: capitalize;
 	letter-spacing: 2px;
 
-	background: url('../img/bgfont.jpeg');
+	background: url('bgfont.jpeg');
 	-webkit-background-clip: text;
 	-webkit-text-fill-color:transparent ;
 
@@ -180,7 +180,7 @@ ul li a{
 	width: 300px;
 	height: 470px;
 
-	background: url('../img/shop7.png');
+	background: url('shop7.png');
 
 	position: absolute;
 	top: 200px;
@@ -190,7 +190,7 @@ ul li a{
 	width: 380px;
 	height: 485px;
 
-	background: url('../img/shop17.png');
+	background: url('shop17.png');
 	position: absolute;
 	top: 100px;
 	left: 950px;
@@ -385,7 +385,6 @@ ul li a{
 	height: 500px;
 	z-index: -3;
 	/*border: 2px solid #f3f3f3;*/
-	background: url('../img/shop14.png');
 
 	position: absolute;
 	top: 0;
@@ -429,7 +428,6 @@ ul li a{
 	height: 450px;
 	z-index: -1;
 
-	background: url('../img/shop7.png');
 
 	position: absolute;
 	top: 380px;
@@ -440,7 +438,6 @@ ul li a{
 	height: 485px;
 
 	z-index: -2;
-	background: url('../img/shop17.png');
 	position: absolute;
 	top: 400px;
 	left: -80px;
