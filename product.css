@@ -1,0 +1,523 @@
+body{
+	margin: 0;
+	padding: 0;
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	background-color: #d7dbca;
+
+	scroll-behavior: smooth;
+
+}
+.nav{
+	height: 80px;
+	display: flex;
+	color: #222;
+	margin-top: 10px;
+	
+}
+.logo{
+	width: 30px;
+	height: 30px;
+	margin: 40px;
+	align-self: center;
+	background-color: #c4496e;
+	transform: rotate(45deg);
+
+	display: inline-block;
+	position: relative;
+
+	animation: logoani 2s linear infinite;
+}
+.logo::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #c4496e;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	transform: translateY(-50%);
+}
+.logo::after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: #c4496e;
+	border-radius: 50%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	transform: translateX(-50%);
+
+}
+@keyframes logoani{
+	0%{
+		transform: rotate(45deg) scale(1);
+	}
+	25%{
+		transform: rotate(45deg) scale(1);
+	}
+	35%{
+		transform: rotate(45deg) scale(1.25);
+	}
+	50%{
+		transform: rotate(45deg) scale(1.15);
+	}
+	70%{
+		transform: rotate(45deg) scale(1.25);
+	}
+	100%{
+		transform: rotate(45deg) scale(1);
+	}
+}
+h1{
+	color: #c4496e;
+	font-family: sans-serif;
+	align-self: center;
+}
+ul{
+	list-style-type: none;
+	display: flex;
+	margin-left: 200px;
+	align-self: center;
+}
+ul li{
+	font-family: 'Cairo', sans-serif;
+	font-size: 20px;
+	margin:10px 20px 20px 20px;
+	text-transform: uppercase;
+
+	position: relative;
+	overflow: hidden;
+}
+ul  li::before{
+	content: '';
+	width: 100%;
+	height: 2.5px;
+
+	background-color: #c4496e ;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+
+	transform: translateX(-120%);
+	transition: all 0.5s;
+}
+ul li:hover::before{
+	transform: translateX(0px);
+}
+
+
+ul li a{
+	text-decoration: none;
+	color: #222;
+}
+.wood{
+	width: 100%;
+	height: 600px;
+	display: flex;
+
+	position: relative;
+}
+.wood1{
+	width: 500px;
+	height: 500px;
+	/*border: 2px solid #f3f3f3;*/
+	background: url('../img/shop14.png');
+
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+.wood2{
+	width: 900px;
+	height: 300px;
+
+	margin: 80px;
+
+	position: absolute;
+	top: -20px;
+	left: 200px;
+}
+.wood2 h3{
+	font-family: 'Cairo', sans-serif;
+	font-size: 40px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+
+	background: url('../img/bgfont.jpeg');
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent ;
+
+	text-align: center;
+	margin: 0;
+	padding: 0;
+
+	animation: myfont 10s infinite linear;
+}
+@keyframes myfont{
+	from{
+		background-position: 0 0;
+	}
+	to{
+		background-position: -700px 0;
+	}
+}
+.wood2 p{
+	font-family: 'Cairo', sans-serif;
+	color: #222;
+	font-size: 25px;
+
+	text-align: center;
+
+}
+.wood3{
+	width: 300px;
+	height: 470px;
+
+	background: url('../img/shop7.png');
+
+	position: absolute;
+	top: 200px;
+	left: 550px;
+}
+.wood4{
+	width: 380px;
+	height: 485px;
+
+	background: url('../img/shop17.png');
+	position: absolute;
+	top: 100px;
+	left: 950px;
+	
+}
+.woodproducts{
+	width: 100%;
+	height: 1200px;
+	margin: 130px 0 0 0;
+
+
+	/*background-color: black;*/
+}
+.woodproducts .shop{
+	width:300px;
+	height: 300px;
+	background-color:#f1f1f1;
+	margin: 30px 15px;
+
+	float: left;
+
+	position: relative;
+	overflow: hidden;
+}
+.shop img{
+	width: 300px;
+	height: 300px;
+	transition: all 0.5s;
+}
+.shop:hover img{
+	transform: translateX(700px) scale(0);
+}
+.shop .caption{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-family: 'Cairo', sans-serif;
+
+	text-transform: uppercase;
+	background-color: #c4496e;
+	color: #f1f1f1;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	opacity: 0;
+
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+
+	transition: all 0.25s;
+}
+.shop:hover .caption{
+	opacity: 1;
+}
+.caption h3{
+	padding:20px ;
+	background-color: rgba(0, 0, 0,0.7);
+
+	transform: translateX(-300px);
+}
+.shop:hover h3{
+	transform: translateX(0px);
+	transition-delay: 0.9s;
+
+}
+.caption p{
+	width: 80%;
+	font-size: 16px;
+	align-self: center;
+
+	transform: translateY(-300px);
+}
+.shop:hover p{
+	transform: translateY(-10px);
+	transition-delay: 0.7s;
+}
+.caption a{
+	width: 200px;
+	text-decoration: none;
+	background-color: #222;
+	padding:15px;
+	color: #fff;
+	align-self: center;
+
+	transform: translateY(-350px);
+}
+.shop:hover a{
+	transform: translateY(-20px);
+	transition-delay: 0.5s;
+
+}
+.footer{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-shadow: 3px 3px 20px #222;
+	margin-top: 0;
+	font-family: 'Cairo', sans-serif;
+	background: linear-gradient(45deg,
+								#80cc70 50%,#d1c554 50%);
+	/*clear: both;*/
+	display: flex;
+	color: gray;
+}
+.footer .contact{
+	margin: 20px;
+	width: 40%;
+	color: #222;
+}
+.contact .form-group{
+	margin: 20px;
+}
+.footer .contact i{
+	color: #222;
+	transition: all 0.3s;
+}
+.contact .subscribe{
+	width: 200px;
+	margin-left: 0;
+	border: 3px #f1f1f1 outset;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 20px;
+	padding: 10px;
+	color: #f1f1f1;
+}
+.contact .subscribe::placeholder{
+	color: #222;
+	font-family: 'Cairo', sans-serif;;
+}
+.footer i:hover{
+	color: #c4496e;
+	transform: scale(1.2);
+}
+.footer .pay{
+	color: #222;
+	margin: 20px;
+	width: 60%;
+
+}
+.footer .pay a{
+	/*text-decoration: underline;*/
+	font-weight: bolder;
+	color: #c4496e;
+	margin: 30px;
+}
+@media only screen and (max-width : 600px){
+	.nav{
+	width: 100%;
+	height: 500px;
+	display: block;
+	/*background-color: #222;*/
+	color: #222;
+	}
+	.logo{
+	width: 25px;
+	height: 25px;
+	margin: 30px;
+	}
+	h1{
+	 display: inline-block;
+	 font-size: 20px;
+	 margin: 30px;
+	}
+	ul{
+		display: block;
+		margin: 30px;
+		margin-left: 0;
+	}
+	ul li{
+		background: #c4496e;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	ul li a{
+		color: #f1f1f1;
+
+	}
+	
+.wood{
+	width: 100%;
+	height: 1000px;
+	/*background-color: #222;*/
+	margin-top: 30px;
+	position: relative;
+}
+.wood1{
+	width: 440px;
+	height: 500px;
+	z-index: -3;
+	/*border: 2px solid #f3f3f3;*/
+	background: url('../img/shop14.png');
+
+	position: absolute;
+	top: 0;
+	left: 100px;
+}
+.wood2{
+	width: 450px;
+	height: 200px;
+
+	margin: 80px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	transform: rotate(-90deg) translate(-80px,-200px);
+}
+.wood2 h3{
+	font-family: 'Cairo', sans-serif;
+	font-size: 40px;
+	text-transform: capitalize;
+	text-align: justify-all;
+	margin: 0;
+	padding: 0;
+
+	background: url('../img/bgfont.jpeg');
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent ;
+}
+
+.wood2 p{
+	font-family: 'Cairo', sans-serif;
+
+	color: #f1f1f1;
+	font-size: 25px;
+	text-shadow: 0 3px 10px #323232;
+
+}
+.wood3{
+	width: 400px;
+	height: 450px;
+	z-index: -1;
+
+	background: url('../img/shop7.png');
+
+	position: absolute;
+	top: 380px;
+	left: 200px;
+}
+.wood4{
+	width: 330px;
+	height: 485px;
+
+	z-index: -2;
+	background: url('../img/shop17.png');
+	position: absolute;
+	top: 400px;
+	left: -80px;
+	
+}
+.woodproducts{
+	width: 100%;
+	height: 5700px;
+	margin: 0;
+	/*background-color: #222;*/
+
+	/*background-color: black;*/
+}
+.woodproducts .shop{
+	width:450px;
+	height: 400px;
+	background-color: transparent;
+	margin:30px;
+	float: left;
+
+	position: relative;
+	overflow: hidden;
+}
+.shop img{
+	width: 400px;
+	height: 100%;
+	transition: all 0.5s;
+}
+.shop:hover img{
+	transform: rotate(1turn) translateX(700px) scale(0);
+}
+.shop h3{
+	transform: rotate(1turn) translateX(-450px);
+	transition: all 0.3s;
+}
+.shop:hover h3{
+	transform: translateX(0px);
+}
+.shop p{
+	transform: translateY(500px);
+	transition: all 0.3s;
+}
+.shop:hover p{
+	transform: rotate(1turn) translateY(0px);
+	transition-delay: 0.2s;
+}
+.footer{
+	margin-top: 0px;
+	display: inline-block;
+}
+.footer .contact{
+	margin: 20px;
+	width: 100%;
+	color: #222;
+}
+.contact h1,h3,p,i{
+	font-size: 30px;
+}
+.contact .subscribe{
+	width: 300px;
+}
+.contact button{
+	width: 50px;
+}
+.footer .pay{
+	color: #222;
+	margin: 30px;
+	width: 100%;
+
+}
+.footer .pay h1,b,small{
+	font-size: 30px;
+}
+.footer .pay a{
+	/*text-decoration: underline;*/
+	font-weight: bolder;
+	color: #c4496e;
+	margin: 30px;
+}
+}

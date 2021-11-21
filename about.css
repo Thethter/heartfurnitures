@@ -1,0 +1,358 @@
+body{
+	margin: 0;
+	padding: 0;
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	background-color: #d7dbca;
+
+	scroll-behavior: smooth;
+
+}
+.nav{
+	height: 80px;
+	display: flex;
+	color: #222;
+	margin-top: 10px;
+	
+}
+.logo{
+	width: 30px;
+	height: 30px;
+	margin: 40px;
+	align-self: center;
+	background-color: #c4496e;
+	transform: rotate(45deg);
+
+	display: inline-block;
+	position: relative;
+
+	animation: logoani 2s linear infinite;
+}
+.logo::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #c4496e;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	transform: translateY(-50%);
+}
+.logo::after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: #c4496e;
+	border-radius: 50%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	transform: translateX(-50%);
+
+}
+@keyframes logoani{
+	0%{
+		transform: rotate(45deg) scale(1);
+	}
+	25%{
+		transform: rotate(45deg) scale(1);
+	}
+	35%{
+		transform: rotate(45deg) scale(1.25);
+	}
+	50%{
+		transform: rotate(45deg) scale(1.15);
+	}
+	70%{
+		transform: rotate(45deg) scale(1.25);
+	}
+	100%{
+		transform: rotate(45deg) scale(1);
+	}
+}
+h1{
+	color: #c4496e;
+	font-family: sans-serif;
+	align-self: center;
+}
+ul{
+	list-style-type: none;
+	display: flex;
+	margin-left: 200px;
+	align-self: center;
+}
+ul li{
+	font-family: 'Cairo', sans-serif;
+	font-size: 20px;
+	margin:10px 20px 20px 20px;
+	text-transform: uppercase;
+
+	position: relative;
+	overflow: hidden;
+}
+ul  li::before{
+	content: '';
+	width: 100%;
+	height: 2.5px;
+
+	background-color: #c4496e ;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+
+	transform: translateX(-120%);
+	transition: all 0.5s;
+}
+ul li:hover::before{
+	transform: translateX(0px);
+}
+
+
+ul li a{
+	text-decoration: none;
+	color: #222;
+}
+.container{
+	width: 100%;
+	height: 530px;
+
+	margin: 0 0 10px 0;
+
+	position: relative;
+}
+.container .header{
+	width: 600px;
+	height: 300px;
+
+	position: absolute;
+	top: 50px;
+	left: 200px;
+}
+.header h1{
+	font-family: 'Cairo', sans-serif;
+	font-size: 80px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+
+	background: url('../img/bgfont.jpeg');
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent ;
+
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	animation: myfont 10s infinite linear;
+}
+@keyframes myfont{
+	from{
+		background-position: 0 0;
+	}
+	to{
+		background-position: -700px 0;
+	}
+}
+.header p{
+	font-family: 'Cairo', sans-serif;
+	color: #222;
+	font-size: 20px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+.header .collection{
+	font-family: 'Cairo', sans-serif;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	background-color: #222;
+	margin: 0;
+	margin-top: 20px;
+	padding: 13px 16px;
+	letter-spacing: 2px;
+
+	transform: scale(0.8);
+	transition: all 1s;
+}
+.header .collection:hover{
+	font-size: 20px;
+	transform: scale(1);
+	background-color: #c4496e;
+}
+.container img{
+	width: 400px;
+	height: 500px;
+
+	position: absolute;
+	top:20px;
+	left: 800px;
+
+}
+.footer{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-shadow: 3px 3px 20px #222;
+	margin-top: 30px;
+	font-family: 'Cairo', sans-serif;
+	background: linear-gradient(45deg,
+								#80cc70 50%,#d1c554 50%);
+	/*clear: both;*/
+	display: flex;
+	color: gray;
+}
+.footer .contact{
+	margin: 20px;
+	width: 40%;
+	color: #222;
+}
+.contact .form-group{
+	margin: 20px;
+}
+.footer .contact i{
+	color: #222;
+	transition: all 0.3s;
+}
+.contact .subscribe{
+	width: 200px;
+	margin-left: 0;
+	border: 3px #f1f1f1 outset;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 20px;
+	padding: 10px;
+	color: #f1f1f1;
+}
+.contact .subscribe::placeholder{
+	color: #222;
+	font-family: 'Cairo', sans-serif;;
+}
+.footer i:hover{
+	color: #c4496e;
+	transform: scale(1.2);
+}
+.footer .pay{
+	color: #222;
+	margin: 20px;
+	width: 60%;
+
+}
+.footer .pay a{
+	/*text-decoration: underline;*/
+	font-weight: bolder;
+	color: #c4496e;
+	margin: 30px;
+}
+@media only screen and (max-width : 600px){
+	.nav{
+	width: 100%;
+	height: 500px;
+	display: block;
+	/*background-color: #222;*/
+	color: #222;
+	}
+	.logo{
+	width: 25px;
+	height: 25px;
+	margin: 30px;
+	}
+	h1{
+	 display: inline-block;
+	 font-size: 20px;
+	 margin: 30px;
+	}
+	ul{
+		display: block;
+		margin: 30px;
+		margin-left: 0;
+	}
+	ul li{
+		background: #c4496e;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	ul li a{
+		color: #f1f1f1;
+
+	}
+	.container{
+	width: 100%;
+	height: 800px;
+/*background-color: #222;*/
+	margin: 20px 0 50px 0;
+
+	position: relative;
+}
+.container .header{
+	width: 450px;
+	height: 200px;
+
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+.header h1{
+	font-size: 50px;
+	letter-spacing: 10px;
+}
+.header p{
+	color: #f1f1f1;
+	text-shadow: 0 3px 10px #323232;
+	font-size: 25px;
+}
+.header a{
+	font-size: 20px;
+}
+.container img{
+	width: 400px;
+	height: 580px;
+
+	z-index: -1;
+
+	position: absolute;
+	top:130px;
+	left: 150px;
+
+}
+.footer{
+	margin-top: 0px;
+	display: inline-block;
+}
+.footer .contact{
+	margin: 20px;
+	width: 100%;
+	color: #222;
+}
+.contact h1,h3,p,i{
+	font-size: 30px;
+}
+.contact .subscribe{
+	width: 300px;
+}
+.contact button{
+	width: 50px;
+}
+.footer .pay{
+	color: #222;
+	margin: 30px;
+	width: 100%;
+
+}
+.footer .pay h1,b,small{
+	font-size: 30px;
+}
+.footer .pay a{
+	/*text-decoration: underline;*/
+	font-weight: bolder;
+	color: #c4496e;
+	margin: 30px;
+}
+
+
+
+}
