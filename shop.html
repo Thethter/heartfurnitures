@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Heart furniture shop</title>
+		<link href="../css/shop.css" rel= "stylesheet" type="text/css" >
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+		
+	</head>
+
+	<body>
+		<div class="nav">
+		<div class="logo"></div>
+		<h1 style="font-family: 'Dancing Script', cursive;font-size: 50px;margin:0;text-transform: uppercase;">heart</h1>
+		<ul>
+			<li><a href = 'index.html'>home</a></li>
+			<li><a href = 'shop.html'>shop</a></li>
+			<li><a href = 'product.html'>product</a></li>
+			<li><a href = 'about.html'>about</a></li>
+		</ul>
+
+		<ul>
+			<li><button onclick="let type = prompt('Enter Your Furniture Type')" style="width:28px;height:28px;border-radius: 50%;border:none;background-color: #d7dbca;"><i class="fas fa-search" style="font-size: 18px;"></i></button></li>
+
+			<li><a href="#" style="text-decoration: none;"><i class="fas fa-star" style="color:goldenrod;"></i></a></li>
+			<li><a href="#" style="text-decoration: none;"><i class="fas fa-cart-arrow-down"></i></a></li>
+		</ul>
+
+	</div>
+
+
+	<div class="container">
+		<div class="fbtn"><button><i class="fas fa-arrow-circle-left" style="font-size: 25px;color: #f1f1f1;"></i></button></div>
+		<div class="header">
+			<h3>Wood Products</h3>
+			<p>Code : HW-00<span id="code"></span></p>
+			<small>Price : &#x00024;<span id = "price"></span></small>
+			<a href="cart.html" class="collection" id = "cart">Buy Now</a>
+		</div>
+
+			<div class="img"></div>
+		<div class="backbtn"><button><i class="fas fa-arrow-circle-right" style="font-size: 25px;color: #f1f1f1;"></i></button></div>
+	</div>
+
+	<div class="footer">
+		<div class="contact">
+			<h1>Heart Furnitures for indoor plant</h1>
+			<h3>Stay Connected</h3>
+			<p>Shop with us for your indoorplants...</p>
+
+			<div class="form-group">
+				<input type="email" name="email" id="email" class="subscribe" placeholder="Enter your Email" autocomplete="off" style="width:250px" />
+				<button style="width:150px;padding:8px;background-color: #c4496e;border:none;letter-spacing: 2px;font-weight: bold;font-size: 18px;font-family: 'Cairo', sans-serif;;">SUBSCRIBE</button>
+
+			</div>
+
+			<span style="font-size: 30px;">Paradise of furnitures for indoor plants</span><br/><br/>
+
+			
+
+			<i class="fab fa-facebook-f" style="font-size: 25px;padding: 10px;"></i>
+			<i class="fab fa-twitter"  style="font-size: 25px;padding: 10px;"></i>
+			<i class="fab fa-youtube"  style="font-size: 25px;padding: 10px;"></i>
+
+
+			
+		</div>
+		<div class="pay">
+			<h1 style="margin: 30px;">Navigate</h1>
+			<a href="#">Portfolio</a>
+			<a href="#">Share link</a>
+			<a href="#">Products</a>
+			<a href="#">Wood products</a><br/>
+			<a href="#">Fantastic products</a>
+			<a href="#">Local products</a>
+			<a href="#">global products</a>
+			<a href="#">Others</a><br/>
+			<a href="#">Duty</a>
+			<a href="#">Services</a>
+			<a href="#">Consulting</a>
+			<a href="#">Events</a><br/>
+			<a href="#">Our team</a>
+			<a href="#">Location</a>
+			<a href="#">About Us</a><br/>
+			<a href="#">FAQs</a>
+			<a href="#">Details</a>
+			<a href="#">Support</a>
+			<a href="#">Admin's Info</a><br/><br/>
+
+			<b style="font-size: 20px;margin-left: 30px;">Payment System By</b>
+
+			<i class="fab fa-cc-paypal" style="font-size: 40px;padding: 10px;"></i>
+			<i class="fab fa-cc-visa" style="font-size: 40px;padding: 10px;"></i>
+			<i class="fab fa-google-wallet" style="font-size: 40px;padding: 10px;"></i>
+
+			
+			<hr/>
+
+			<small style="font-size: 20px;margin:30px">Copyright &#x000A9;<span id = "span"></span> By Thin Htet Kyaw (Web Development Batch 5)</small>
+
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+		 	 	document.getElementById('code').textContent = Math.floor(Math.random()*10);
+
+		 	 	document.getElementById('price').textContent = Math.ceil(Math.random()*1000);
+
+			let year = new Date().getUTCFullYear();
+			document.getElementById('span').textContent = year;
+
+
+	</script>
+	</body>
+</html>
