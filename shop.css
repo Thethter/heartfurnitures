@@ -421,7 +421,7 @@ ul li a{
 	width: 420px;
 	height: 460px;
 
-	background: url('../img/home.png');
+	background: url('home.png');
 
 	position: absolute;
 	top: 250px;
