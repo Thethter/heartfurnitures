@@ -177,7 +177,7 @@ ul li a{
 	width: 420px;
 	height: 460px;
 
-	background: url('../img/home.png');
+	background: url('home.png');
 
 	position: absolute;
 	top: 30px;
@@ -187,22 +187,22 @@ ul li a{
 }
 @keyframes myimg{
 	0%{
-		background: url(../img/home.png);
+		background: url(home.png);
 	}
 	5%{
-		background: url(../img/home1.png);
+		background: url(home1.png);
 	}
 	10%{
-		background: url(../img/home2.png);
+		background: url(home2.png);
 	}
 	15%{
-		background: url(../img/home3.png);
+		background: url(home3.png);
 	}
 	20%{
-		background: url(../img/shop1.png);
+		background: url(shop1.png);
 	}
 	25%{
-		background: url(../img/shop2.png);
+		background: url(shop2.png);
 	}
 	30%{
 		background: url(../img/shop3.png);
